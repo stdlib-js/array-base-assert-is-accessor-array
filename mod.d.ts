@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2022 The Stdlib Authors.
@@ -16,36 +16,32 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
 
-// VARIABLES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-var TYPE = 'function';
-
-
-// MAIN //
+import { Collection } from '@stdlib/types/object';
 
 /**
 * Tests if an array-like object supports the accessor (get/set) protocol.
 *
-* @param {Object} value - value to test
-* @returns {boolean} boolean indicating whether a value is an accessor array
+* @param value - value to test
+* @returns boolean indicating whether a value is an accessor array
 *
 * @example
-* var Complex128Array = require( '@stdlib/array-complex128' );
+* var Complex128Array = require( `@stdlib/array/complex128` );
 *
-* var bool = isAccessorArray( new Complex128Array( 10 ) );
+* var arr = new Complex128Array( 10 );
+* var bool = isAccessorArray( arr );
 * // returns true
 *
 * @example
 * var bool = isAccessorArray( [] );
 * // returns false
 */
-function isAccessorArray( value ) {
-	return ( typeof value.get === TYPE && typeof value.set === TYPE ); // eslint-disable-line valid-typeof
-}
+declare function isAccessorArray( value: Collection ): boolean;
 
 
 // EXPORTS //
 
-module.exports = isAccessorArray;
+export = isAccessorArray;
