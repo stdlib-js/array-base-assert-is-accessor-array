@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-20)
+## Unreleased (2025-12-31)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`0ac2495`](https://github.com/stdlib-js/stdlib/commit/0ac2495ffcce896b3dfc737aca766b70f0ad9cb6) - **bench:** refactor to use string interpolation in `array/base/assert/is-accessor-array` [(#9458)](https://github.com/stdlib-js/stdlib/pull/9458) _(by KovidhRaj, Athan Reines, stdlib-bot)_
 -   [`4f3789b`](https://github.com/stdlib-js/stdlib/commit/4f3789b25e01908dab6c31b910573b73e5709ac5) - **docs:** fix example code _(by Philipp Burckhardt)_
 
 </details>
@@ -24,8 +25,10 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
+-   Athan Reines
+-   KovidhRaj
 -   Philipp Burckhardt
 
 </section>
